@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner | Explore More</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a class="active" href="index.html">Home</a>
+    <a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a>
+    <a href="map.html">Map</a>
+    <a href="budget.html">Budget</a>
+    <a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a>
+    <a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+    <a href="readiness.html">Trip Readiness</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Discover More.<br>Travel Smarter. 🌍</h1>
+    <p>Plan your journeys, explore destinations, check weather, manage expenses and organize every detail of your next adventure.</p>
+    <a class="btn" href="itinerary.html">Plan Your Trip →</a>
+  </section>
+
+  <h2 class="section-title">Your Travel Dashboard</h2>
+  <section class="dashboard-grid">
+    <article class="card dashboard-card">
+      🗓️ <p>Saved Itinerary Items</p>
+      <strong id="dashboardTrips">0</strong>
+    </article>
+    <article class="card dashboard-card">
+      ❤️ <p>Favourite Destinations</p>
+      <strong id="dashboardFavorites">0</strong>
+    </article>
+    <article class="card dashboard-card">
+      💰 <p>Planned Budget</p>
+      <strong id="dashboardBudget">₹0</strong>
+    </article>
+    <article class="card dashboard-card">
+      🧾 <p>Recorded Expenses</p>
+      <strong id="dashboardExpenses">₹0</strong>
+    </article>
+    <article class="card dashboard-card">
+      🎒 <p>Packing Progress</p>
+      <strong id="dashboardPacking">0/14</strong>
+    </article>
+  </section>
+
+  <div id="tripCountdown" class="countdown">
+    Add an upcoming trip to see your countdown.
+  </div>
+
+  <h2 class="section-title">Explore Travel Tools</h2>
+  <section class="cards">
+
+
+<article class="card">
+  <div class="feature-icon">✨</div>
+  <h2>Smart Trip Readiness</h2>
+  <p>Analyse your travel preparation with a personalized readiness score and recommendations.</p>
+  <a href="readiness.html">Check Readiness →</a>
+</article>
+
+
+    <article class="card">
+      <div class="feature-icon">☀️</div>
+      <h2>Weather Forecast</h2>
+      <p>Check current conditions and a 7-day forecast.</p>
+      <a href="weather.html">Check Weather →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">💱</div>
+      <h2>Currency Converter</h2>
+      <p>Convert currencies for international travel.</p>
+      <a href="currency.html">Convert Currency →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">🗺️</div>
+      <h2>Maps and Routes</h2>
+      <p>Explore locations and find driving routes.</p>
+      <a href="map.html">Explore Map →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">💰</div>
+      <h2>Travel Budget</h2>
+      <p>Estimate and manage your trip expenses.</p>
+      <a href="budget.html">Manage Budget →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">🗓️</div>
+      <h2>Trip Itinerary</h2>
+      <p>Organize your travel dates and activities.</p>
+      <a href="itinerary.html">Plan Itinerary →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">❤️</div>
+      <h2>Favourites</h2>
+      <p>Keep your dream destinations in one place.</p>
+      <a href="favorites.html">View Favourites →</a>
+    </article>
+    <article class="card">
+      <div class="feature-icon">🎒</div>
+      <h2>Packing Checklist</h2>
+      <p>Prepare your essentials before travelling.</p>
+      <a href="packing.html">Pack Your Bags →</a>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <strong>🌍 Travel Planner</strong>
+  <p>Plan smart. Explore more. Travel happy.</p>
+  <p>© 2026 Travel Planner</p>
+</footer>
+</body>
+</html>

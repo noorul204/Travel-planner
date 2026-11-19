@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Trip Readiness | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a>
+    <a href="map.html">Map</a>
+    <a href="budget.html">Budget</a>
+    <a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a>
+    <a href="packing.html">Packing</a>
+    <a class="active" href="readiness.html">Trip Readiness</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-heading">
+    <h1>✨ Smart Trip Readiness Assistant</h1>
+    <p>Check how prepared you are before starting your next adventure.</p>
+  </div>
+
+  <section class="form-section">
+    <h2>Tell Us About Your Trip</h2>
+
+    <input
+      type="text"
+      id="readinessDestination"
+      placeholder="Enter destination, e.g. Bangkok"
+    >
+
+    <input
+      type="date"
+      id="readinessDate"
+    >
+
+    <button class="btn" onclick="runReadinessCheck()">
+      ✨ Check My Trip Readiness
+    </button>
+
+    <p class="note">
+      Your existing itinerary, budget and packing checklist will be considered.
+    </p>
+  </section>
+
+  <section id="readinessResult" class="readiness-result" aria-live="polite">
+    <div class="readiness-empty">
+      <div class="readiness-icon">✈️</div>
+      <h2>Your trip preparation starts here!</h2>
+      <p>Enter your destination and travel date to get your readiness report.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  🌍 Travel Planner · © 2026
+</footer>
+
+</body>
+</html>

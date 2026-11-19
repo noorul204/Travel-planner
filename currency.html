@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a class="active" href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>💱 Currency Converter</h1>
+    <p>Convert currencies when planning your international trips.</p>
+  </div>
+  <section class="search-area">
+    <h2>Convert Your Currency</h2>
+    <input type="number" id="amount" min="0" step="any" placeholder="Enter amount">
+    <br>
+    <label for="fromCurrency">From:</label>
+    <select id="fromCurrency">
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+      <option value="AUD">AUD - Australian Dollar</option>
+      <option value="CAD">CAD - Canadian Dollar</option>
+      <option value="SGD">SGD - Singapore Dollar</option>
+      <option value="AED">AED - UAE Dirham</option>
+      <option value="THB">THB - Thai Baht</option>
+      <option value="MYR">MYR - Malaysian Ringgit</option>
+    </select>
+    <br>
+    <label for="toCurrency">To:</label>
+    <select id="toCurrency">
+      <option value="USD">USD - US Dollar</option>
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+      <option value="AUD">AUD - Australian Dollar</option>
+      <option value="CAD">CAD - Canadian Dollar</option>
+      <option value="SGD">SGD - Singapore Dollar</option>
+      <option value="AED">AED - UAE Dirham</option>
+      <option value="THB">THB - Thai Baht</option>
+      <option value="MYR">MYR - Malaysian Ringgit</option>
+    </select>
+    <br>
+    <button class="btn" onclick="convertCurrency()">Convert Currency</button>
+    <p class="note">Exchange rates are fetched from Frankfurter.</p>
+  </section>
+  <div id="currencyResult" class="result" aria-live="polite">
+    Enter an amount and select currencies to convert.
+  </div>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

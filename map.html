@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maps and Routes | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a class="active" href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>🗺️ Explore Maps and Routes</h1>
+    <p>Find a destination or calculate a driving route between two cities.</p>
+  </div>
+  <section class="search-area">
+    <h2>📍 Find a Location</h2>
+    <input type="text" id="mapCityInput" placeholder="Enter a city">
+    <button class="btn" onclick="searchMap()">Find Location</button>
+    <p id="mapMessage" class="note" aria-live="polite"></p>
+  </section>
+  <section class="form-section">
+    <h2>🚗 Route and Distance Finder</h2>
+    <input type="text" id="routeStart" placeholder="Starting city">
+    <input type="text" id="routeEnd" placeholder="Destination city">
+    <button class="btn" onclick="findRoute()">Find Driving Route</button>
+    <p id="routeMessage" class="note" aria-live="polite"></p>
+  </section>
+  <div id="map"></div>
+  <p class="note">Map tiles by Esri. Driving route estimates provided by the public OSRM demo service.</p>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

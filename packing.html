@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packing Checklist | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a class="active" href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>🎒 Smart Packing Checklist</h1>
+    <p>Keep track of your travel essentials before departure.</p>
+  </div>
+  <div id="packingProgress" class="result"></div>
+  <section id="packingList"></section>
+  <div style="text-align:center">
+    <button class="btn" onclick="resetPacking()">Reset Checklist</button>
+  </div>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

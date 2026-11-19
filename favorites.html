@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Destinations | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a class="active" href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>❤️ Favourite Destinations</h1>
+    <p>Save the places you dream of exploring.</p>
+  </div>
+  <section class="search-area">
+    <input type="text" id="favoriteCity" placeholder="Enter a city name">
+    <button class="btn" onclick="addFavorite()">❤️ Save Destination</button>
+    <p class="note">Search for a city to save its location to your favourites.</p>
+  </section>
+  <h2 class="section-title">My Saved Destinations</h2>
+  <section id="favoritesList" class="cards"></section>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

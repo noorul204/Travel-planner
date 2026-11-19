@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a class="active" href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>☀️ Weather Forecast</h1>
+    <p>Check current weather and the next seven days before you travel.</p>
+  </div>
+  <section class="search-area">
+    <input type="text" id="cityInput" placeholder="Enter a city, e.g. Madurai">
+    <button class="btn" onclick="getWeather()">Search Weather</button>
+    <p class="note">Weather information is provided by Open-Meteo.</p>
+  </section>
+  <div id="weatherResult" class="result" aria-live="polite">
+    Search for a city to see its weather forecast.
+  </div>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

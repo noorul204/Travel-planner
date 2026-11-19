@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a class="active" href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <section class="hero">
+    <h1>About Travel Planner 🌍</h1>
+    <p>A simple and useful travel companion designed to make planning journeys easier, smarter and more organized.</p>
+  </section>
+
+  <h2 class="section-title">Our Features</h2>
+  <section class="cards">
+    <article class="card"><h2>☀️ Weather Forecast</h2><p>View current conditions and a seven-day forecast for destinations.</p></article>
+    <article class="card"><h2>💱 Currency Converter</h2><p>Convert currencies using available exchange-rate information.</p></article>
+    <article class="card"><h2>🗺️ Maps and Routes</h2><p>Explore city locations and find estimated driving routes.</p></article>
+    <article class="card"><h2>💰 Budget Manager</h2><p>Estimate trip costs and record travel expenses.</p></article>
+    <article class="card"><h2>🗓️ Itinerary Planner</h2><p>Organize destinations, dates and planned activities.</p></article>
+    <article class="card"><h2>🎒 Packing Checklist</h2><p>Track essential items before starting your journey.</p></article>
+  </section>
+
+  <div class="note-box">
+    <h2>Technologies Used</h2>
+    <p>HTML5 · CSS3 · JavaScript · Open-Meteo API · Frankfurter API · Leaflet.js · Esri Maps · OSRM · Browser Local Storage</p>
+  </div>
+  <div class="note-box">
+    <h2>Project Purpose</h2>
+    <p>Travel Planner is a front-end web application developed to bring common trip-planning tools together in one convenient interface.</p>
+  </div>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>

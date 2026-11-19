@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Budget | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">🌍 Travel Planner</div>
+  <div class="header-actions">
+    <button class="theme-button" id="themeButton" onclick="toggleTheme()">🌙 Dark mode</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <nav id="mainNav">
+    <a href="index.html">Home</a><a href="weather.html">Weather</a>
+    <a href="currency.html">Currency</a><a href="map.html">Map</a>
+    <a class="active" href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a>
+    <a href="favorites.html">Favourites</a><a href="packing.html">Packing</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-heading">
+    <h1>💰 Travel Budget Manager</h1>
+    <p>Plan your expected costs and record your actual expenses.</p>
+  </div>
+  <section class="form-section">
+    <h2>Estimated Trip Budget</h2>
+    <input type="number" id="transport" min="0" placeholder="Transport cost (₹)">
+    <input type="number" id="hotel" min="0" placeholder="Accommodation cost (₹)">
+    <input type="number" id="food" min="0" placeholder="Food cost (₹)">
+    <input type="number" id="shopping" min="0" placeholder="Shopping cost (₹)">
+    <input type="number" id="other" min="0" placeholder="Other expenses (₹)">
+    <button class="btn" onclick="calculateBudget()">Calculate and Save Budget</button>
+  </section>
+  <div id="budgetResult" class="result">Your estimated budget will appear here.</div>
+
+  <h2 class="section-title">🧾 Record Your Expenses</h2>
+  <section class="form-section">
+    <input type="text" id="expenseName" placeholder="Expense name, e.g. Lunch">
+    <input type="number" id="expenseAmount" min="0" step="any" placeholder="Amount (₹)">
+    <select id="expenseCategory">
+      <option>Food</option><option>Transport</option><option>Accommodation</option>
+      <option>Shopping</option><option>Activities</option><option>Other</option>
+    </select>
+    <button class="btn" onclick="addExpense()">Add Expense</button>
+  </section>
+  <div id="expenseTotal" class="result">Total recorded expenses: ₹0</div>
+  <div id="expenseList"></div>
+  <button class="btn" onclick="clearExpenses()">Clear All Expenses</button>
+</main>
+<footer>🌍 Travel Planner · © 2026</footer>
+</body>
+</html>
